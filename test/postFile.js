@@ -51,7 +51,7 @@ describe('POST translations with wrong credentials', function () {
     requestPromise = new Promise(function (resolve, reject) {
       reject({
         response: {
-          body: '{ message: \'Unable to upload document\', code: 400 }'
+          body: '{ "message": "Unable to upload document", "code": 400 }'
         }
       });
     });
